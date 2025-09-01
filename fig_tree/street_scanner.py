@@ -67,7 +67,7 @@ def parse_args():
     ap.add_argument("--class_name", default="fig_tree",
                     help="Target class name to alert on (e.g., 'fig_tree' for custom model, 'person' for yolov8n).")
     ap.add_argument("--mute", action="store_true", help="Disable TTS voice alerts.")
-    ap.add_argument("--cooldown", type=float, default=6.0, help="Min seconds between alerts.")
+    ap.add_argument("--cooldown", type=float, default=2.0, help="Min seconds between alerts.")
     ap.add_argument("--min_frames", type=int, default=10, help="Frames required between alerts.")
     ap.add_argument("--save_snaps", action="store_true", help="Save detection crops to disk.")
     ap.add_argument("--snap_dir", default="detections/snaps", help="Folder for saved crops (with --save_snaps).")

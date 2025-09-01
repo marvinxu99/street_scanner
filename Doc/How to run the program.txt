@@ -1,0 +1,8 @@
+Run examples:
+
+(1) Pipeline test with generic model (no training yet). Use a COCO class like person so alerts can trigger:
+	python street_scanner.py --model yolov8n.pt --class_name person --cam 0 --mute --show_fps
+
+(2) After you train your fig model:
+	python street_scanner.py --model runs/detect/train/weights/best.pt --class_name fig_tree --cam 0 --conf 0.55 --show_fps
+
